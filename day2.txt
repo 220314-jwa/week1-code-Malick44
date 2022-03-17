@@ -1,14 +1,14 @@
-public static void main(String[] args) {
-	String[] foodTypes = getFoodTypes();
+public static void main(String[] args) {//Main method
+	String[] foodTypes = getFoodTypes();// initialize String Array by calling a method
 	String myType = foodTypes[2];
 
-	String[] foodsOfMyType = getFoodsByType(myType);
+	String[] foodsOfMyType = getFoodsByType(myType);// initialize String Array by calling a method
 	
 	for (String food : foodsOfMyType) {
 		System.out.println(food);
 	}
 }
-
+// static method that returs a String Array
 public static String[] getFoodTypes() {
 	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};
 	return foodTypes;
@@ -16,6 +16,9 @@ public static String[] getFoodTypes() {
 
 public static String[] getFoodsByType(String type) {
 	String[] foods = new String[3];
+
+
+// switch statement 
 
 	switch(type) {
 	case "breakfast":
