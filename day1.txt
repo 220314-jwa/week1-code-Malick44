@@ -14,7 +14,7 @@ System.out.println(result);
 
 
 
-	// this the main method
+	// this is the main method
 
 	public static void main(String[] args) { // method definition inside curly braces
 
