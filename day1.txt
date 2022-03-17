@@ -12,9 +12,7 @@ if (score == 80) {
 
 System.out.println(result);
 
-/*
 
-*/
 
 	// this the main method
 
