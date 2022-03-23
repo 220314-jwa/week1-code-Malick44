@@ -1,13 +1,15 @@
-public class Food {
-	public String name;
-	public String type;
+// the Food class contains with field "name" and "type" and two methods
 
-	public Food(String name, String type) {
-		this.name = name;
-		this.type = type;
+public class Food {
+	public String name; // variable of type String declared but not initialized
+	public String type; variable of type String declared but not initialized
+
+	public Food(String name, String type) {//  arg constructor with two Strings args
+		this.name = name;  // this.name is name declred above (public String name;) its value will be the value passe in constructor first arg.
+		this.type = type; this.type is name declred above (public String type;) its value will be the value passe in constructor second arg.
 	}
 
-	public void cook() {
+	public void cook() {// the non return type cook method will check if the name do not contains the string "cooked"; if true it will set name value to cooked.
 		if (!name.contains("cooked")) {
 			name = "cooked " + name;
 		}
@@ -15,10 +17,10 @@ public class Food {
 }
 
 public class Main {
-	public static void main(String[] args) {
-		Food myFood = new Food("potato", "vegetable");
-		myFood.cook();
+	public static void main(String[] args) {  // the main method
+		Food myFood = new Food("potato", "vegetable"); // this instantiated a new food object that will store in heap memory
+		myFood.cook(); // calling the cook method but this will not execute because we can not call a none static methods in a static context without object
 
-		System.out.println(myFood.name);
+		System.out.println(myFood.name); // print statement will print potato;
 	}
 }

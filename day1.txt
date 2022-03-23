@@ -1,5 +1,5 @@
 int score = 80;
-
+// the overall function is to check for score and print a string saying pass or try again
 String result;
 
 if (score == 80) {

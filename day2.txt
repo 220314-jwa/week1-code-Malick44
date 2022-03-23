@@ -18,16 +18,16 @@ public static String[] getFoodsByType(String type) {
 	String[] foods = new String[3];
 
 
-// switch statement 
+// switch statement will check a selected type of food and return an array of elements
 
 	switch(type) {
-	case "breakfast":
+	case "breakfast": // for type breakfast selected the function will return the [ pancakes...]
 		foods[0] = "pancakes";
 		foods[1] = "cereal";
 		foods[2] = "omelette";
 		break;
-	case "lunch":
-		foods[0] = "sandwich";
+	case "lunch": //for type lunch selected the function will return the [ sandwich...]
+		foods[0] = "sandwich"; // foods[0] will be assign the value of sandwich if type breakfast is selected
 		foods[1] = "salad";
 		foods[2] = "soup";
 		break;
@@ -51,5 +51,5 @@ public static String[] getFoodsByType(String type) {
 		break;
 	}
 
-	return foods;
+	return foods; // here is the return statment;
 }
