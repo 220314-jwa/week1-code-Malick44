@@ -1,19 +1,21 @@
+<!html document missing  !DocType element" -->
+
 <html>
 	<head>
-		<title>Daily Code Review</title>
+		<title>Daily Code Review</title>  <!-- html title goes here-->
 	</head>
 	<body>
 		<h1>Cook your food!</h1>
-		<form action="http://localhost:8080/cook">
+		<form action="http://localhost:8080/cook">   <!-- form action here missing the method attribute necessary to send request-->
 			<label for="foodName">Food Name:</label>
-			<input id="foodName" name="foodName" type="text">
-			<br>
-			<button type="submit">Submit</button>
+			<input id="foodName" name="foodName" type="text"> <!-- self closing input element-->
+			<br> <!-- break to next line-->
+			<button type="submit">Submit</button> <!-- submit element with type attribute-->
 		</form>
 	</body>
 </html>
 
-public static void main(String[] args) {
+public static void main(String[] args) { <!-- can we java code in HTML document? --->
 	Javalin app = Javalin.create();
 	app.start();
 
